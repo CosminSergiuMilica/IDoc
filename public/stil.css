@@ -1,0 +1,466 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1c1c1c;
+  color: #ffff;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.chestionar,
+.corect {
+  max-width: 800px;
+
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #2d2d2d;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+a:hover {
+  background-color: rgb(27, 92, 117);
+  color: white;
+}
+
+.map {
+
+  width: 100%;
+  border-radius: 10px;
+
+  /* adaugă o margine rotunjită video-ului pentru un aspect mai plăcut */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  /* adaugă o umbră pentru a evidenția video-ul */
+}
+
+h4 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+label {
+  display: block;
+
+  font-size: 1rem;
+}
+
+input[type='radio'] {
+  margin-right: 0.5rem;
+  transform: translateY(3px);
+}
+
+.btn, .upButon {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #005fec;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover, .upButon {
+  background-color: #003a8c;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.auth {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+
+  top: 50%;
+  left: 50%;
+  transform: translate(130%, 2%);
+  z-index: 9999;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(8, 7, 16, 0.6);
+  padding: 30px 20px;
+}
+
+.auth * {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+.auth h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input:not(input[type='radio']) {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+::placeholder {
+  color: #e5e5e5;
+}
+
+nav {
+  background-color: #1b1b1b;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav a {
+
+  padding: 8px 12px;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.logout {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  font-size: 12px;
+  padding: 12px 10px;
+
+}
+
+.btnLog {
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 200px;
+  padding: 10px 0;
+  box-shadow: 0 0 20px rgba(238, 89, 20, 0.89);
+  transition: 0.4s;
+  color: rgb(238, 89, 20);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(238, 89, 20, 0.89);
+}
+
+.btnLog:hover {
+   color: white;
+  
+  box-shadow: 0 0 20px rgba(238, 89, 20, 0.89);
+  background-color: rgba(238, 89, 20, 0.89);
+}
+
+.btnAuth {
+   cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 200px;
+  padding: 10px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+  color: rgb(104, 85, 224);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(104, 85, 224, 1);
+}
+
+.btnAuth:hover {
+  color: white;
+  
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+  background-color: rgba(104, 85, 224, 1);
+}
+
+.divAuth {
+  text-align: center;
+}
+
+
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 7vw;
+  line-height: 1;
+  color: #ffeba7;
+  text-align: center;
+  -webkit-text-stroke: 2px #ffeba7;
+  text-stroke: 2px #ffeba7;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  color: transparent;
+}
+
+.menu a {
+  display: inline-block;
+  margin: 5px;
+}
+
+.menu {
+
+  border-radius: 10px;
+  /* adaugă o margine rotunjită video-ului pentru un aspect mai plăcut */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+/*stilizăm butonul de meniu*/
+summary::marker {
+  font-size: 0;
+}
+
+details summary {
+  cursor: pointer;
+  outline: none;
+  position: relative;
+
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+
+}
+
+
+details summary::before,
+details summary::after {
+  content: "";
+  position: absolute;
+
+  width: 25px;
+  height: 3px;
+  background-color: #c7af6b;
+
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+
+}
+
+details summary::before {
+  transform: translateY(-12px);
+}
+
+details[open] summary::before {
+  transform: rotate(45deg);
+}
+
+details[open] summary::after {
+  transform: rotate(-45deg);
+}
+
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  background-color: rgba(86, 107, 105, 0.8);
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex; /* Activăm flexbox */
+  flex-direction: column; /* Elementele sunt aranjate pe coloană */
+  align-items: center; /* Centrăm pe axa orizontală */
+  justify-content: center; /* Centrăm pe axa verticală */
+}
+
+.product img {
+  width: 200px;
+  height: 300px;
+}
+
+.product h2 {
+  font-size: 18px;
+  margin: 0;
+  text-align: center; /* Aliniem titlul la centru */
+}
+
+.product p {
+  margin: 10px 0;
+  color: #008CBA;
+  font-weight: bold;
+  text-align: center; /* Aliniem prețul la centru */
+}
+
+.product button {
+  background-color: #008CBA;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Adaugă colțuri rotunde */
+}
+
+.error-message {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.error-message-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  z-index: 9999; /* Valoarea z-index mai mare */
+  margin-bottom: 50px; /* Spațiu între mesaj și footer */
+}
+@media screen and (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .product {
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product h2 {
+    font-size: 16px;
+  }
+  
+  .product p {
+    font-size: 14px;
+  }
+  .btnLog {
+    padding: 8px 0; /* Adjusted padding for mobile */
+    width: 150px; /* Adjusted width for mobile */
+  }
+  
+}
+.bd {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.bd:hover {
+  background-color: #45a049;
+}
+#chat {
+  width: 100%;
+  background-color: #42414167;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.username {
+  font-weight: bold;
+  color: #fff;
+}
+.userAdmin{
+    transform: translateX(49%);
+}
+
+.user-message-container {
+  width: 50%;
+  background-color: #008CBA;
+  border-radius: 10px;
+  padding: 5px;
+  transform: translateX(1%);
+}
+
+.admin-message-container {
+  width: 50%;
+  background-color: #2ce7f5;
+  border-radius: 10px;
+  padding: 5px;
+  transform: translateX(100%);
+}
+.produse-container:not(upButon) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.produs img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.nume-produs,
+.pret-total {
+  margin: 0;
+}
+.cantitate-container input[type="number"]:not(upButon) {
+    max-width: 50px;
+    max-height: 30px;
+    background-color:darkgray;
+    
+  }
+
