@@ -1,0 +1,79 @@
+[
+  {
+    "userName": "admin",
+    "password": "admin",
+    "firstName": "Vasile",
+    "lastName": "Popescu",
+    "admin": 1
+  },
+  {
+    "userName": "a",
+    "password": "a",
+    "firstName": "Vasile",
+    "lastName": "Popescu",
+    "admin": 0
+  },
+  {
+    "userName": "mariar",
+    "password": "parola2",
+    "firstName": "Maria",
+    "lastName": "Radu",
+    "admin": 0
+  },
+  {
+    "userName": "ionb",
+    "password": "parola3",
+    "firstName": "Ion",
+    "lastName": "Barbu",
+    "admin": 0
+  },
+  {
+    "userName": "elenas",
+    "password": "parola4",
+    "firstName": "Elena",
+    "lastName": "Stan",
+    "admin": 0
+  },
+  {
+    "userName": "mihailv",
+    "password": "parola5",
+    "firstName": "Mihail",
+    "lastName": "Vasilescu",
+    "admin": 0
+  },
+  {
+    "userName": "anam",
+    "password": "parola6",
+    "firstName": "Ana",
+    "lastName": "Munteanu",
+    "admin": 0
+  },
+  {
+    "userName": "gheorghei",
+    "password": "parola7",
+    "firstName": "Gheorghe",
+    "lastName": "Ionescu",
+    "admin": 0
+  },
+  {
+    "userName": "irinab",
+    "password": "parola8",
+    "firstName": "Irina",
+    "lastName": "Balan",
+    "admin": 0
+  },
+  {
+    "userName": "florinr",
+    "password": "parola9",
+    "firstName": "Florin",
+    "lastName": "Radulescu",
+    "admin": 0
+  },
+  {
+    "userName": "daniat",
+    "password": "parola10",
+    "firstName": "Dana",
+    "lastName": "Toma",
+    "admin": 0
+  }
+]

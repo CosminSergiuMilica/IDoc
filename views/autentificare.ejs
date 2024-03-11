@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IDoc.ro</title>
+    <script src="script.js"></script>
+    <link href="./stil.css" rel="stylesheet" type="text/css">
+    
+
+
+</head>
+
+<body>
+    
+   <h1>Autentificare</h1>
+       <hr><br>
+    <% if(userName ===undefined){%>
+    <form class="auth" action="/verifica-autentificare" method="POST">
+        <h3>Log-in: </h3>
+        <label for="username">Username</label>
+        <input type="text" placeholder="Username" id="username" name="nume">
+        <label for="password">Parola</label>
+        <input type="password" placeholder="Password" id="password" name="parola">
+        <button class="btn" type="submit">Log in</button><br>
+        <%if(errorMsg){%>
+        <br>
+        <h3 style="color: red"><%=errorMsg%></h3>
+    <%}%>
+    </form>
+    <%}else{%>
+        <p>Connectat ca <%=userName%></p>
+    <%}%>
+    
+</body>
+
+</html>

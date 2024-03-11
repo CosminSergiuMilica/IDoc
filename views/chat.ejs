@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat</title>
+    <style>
+        /* Stilizări CSS opționale */
+    </style>
+</head>
+
+<body>
+    <h1>CHAT</h1>
+    <hr>
+    <h2>Ne tinem clientii aproape!</h2><br><br><hr>
+    <div id="chat" style="overflow-y: scroll; max-height: 400px;">
+          <ul>
+    <% messages.forEach(function(mess) { %>
+    <li>
+      <% if (mess.isAdmin !== undefined && mess.isAdmin == 1) { %>
+      <h4 class="userAdmin">
+          <img src="./imagini/admin.png" style="padding-right: 5px;"><%= mess.username ? mess.username : 'Anonim' %>
+        </h4>
+      <div class="message-container admin-message-container">
+        
+        <p class="admin-mess">
+          <%= mess.mesaj %>
+        </p>
+      </div>
+      <% } else { %>
+      <h4 class="username">
+          <img src="./imagini/profile.png" style="padding-right: 5px;"><%= mess.username ? mess.username : 'Anonim' %>
+        </h4>
+      <div class="message-container user-message-container">
+        
+        <p class="user-mess">
+          <%= mess.mesaj %>
+        </p>
+      </div>
+      <% } %>
+    </li>
+    <% }) %>
+  </ul>
+    </div>
+
+
+    <form action="/trimite-mesaj" method="POST">
+        <input type="text" id="messageInput" name="mess" placeholder="Introduceți mesajul">
+        <button class="btn" id="sendButton" type="submit">Trimite</button>
+    </form>
+    
+
+</body>
+
+</html>

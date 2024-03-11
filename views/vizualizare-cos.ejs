@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="script.js"></script>
+    <link href="./stil.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+  <br><br><br>
+    <h1>Cos de cumparaturi</h1>
+        <hr><br>
+    <% if (produse !== [] && produse.length > 0) { %>
+  <div class="produse-container">
+    <% let total = 0; %>
+  <% produse.forEach(produs => { %>
+    <div class="produs">
+      <img src="<%= produs.imagine %>" alt="Imagine produs" width="40" height="40">
+      <p class="nume-produs"> Nume produs: <%= produs.nume %> </p><pre> </pre>
+      <p class="pret-total"> Pret total: <%= produs.pret.toFixed(2) * produs.cantitate %> lei </p><pre>  </pre>
+      <div class="cantitate-container">
+      <input type="number" id="cantitate-<%= produs.id %>"
+       name="cantitate-<%= produs.id %>" min="1" 
+       value="<%= produs.cantitate %>">
+      
+      </div>
+      
+    </div>
+    
+    <% total += produs.pret * produs.cantitate; %>
+  <% }); %>
+ 
+<h2>Total: <%= total.toFixed(2) %> lei</h2>
+</div>
+<hr>
+
+<% } else { %>
+  <div class="error-message-container">
+  <span class="error-message">Cosul este gol!</span>
+</div>
+<% } %>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chestionar</title>
+    <link href="./stil.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <br>
+    <h1>Chestionar</h1>
+        <hr><br>
+    <div class="chestionar">
+    <form action="/rezultat-chestionar" method="POST">
+        <% for(var i=0;i<intrebari.length; i++){ %>
+            <div>
+                <h4>
+                    <%= intrebari[i].intrebare%>
+                </h4>
+                <% for(var j=0; j<intrebari[i].variante.length;j++){%>
+                    <label>
+                        <input type="radio" name="intrebare<%= i %>" value="<%= j %>">
+                        <%= intrebari[i].variante[j] %>
+                    </label>
+                    <br>
+                    <%}%>
+            </div>
+            <%}%>
+                <br>
+                <button class="btn" type="submit">Trimiteți</button>
+
+    </form>
+    </div>
+</body>
+
+</html>

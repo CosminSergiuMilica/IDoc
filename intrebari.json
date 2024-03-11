@@ -1,0 +1,52 @@
+[
+    {
+        "intrebare": "Ce format de documente online preferati?",
+        "variante": [
+            "PDF",
+            "TXT",
+            "DOC",
+            "RFT"
+        ],
+        "corect": 0
+    },
+    {
+        "intrebare": "Ce gen de EBook-uri preferati sa cititi?",
+        "variante": [
+            "Educationale",
+            "Arta",
+            "Drama",
+            "Animale"
+        ],
+        "corect": 1
+    },
+    {
+        "intrebare": "Cand ati achizitionat ultima data un EBook?",
+        "variante": [
+            "In ultima saptamana",
+            "In ultima luna",
+            "In ultimul an",
+            "Niciodata"
+        ],
+        "corect": 2
+    },
+    {
+        "intrebare": "Care este dispozitivul preferat pentru cititul de cărți electronice?",
+        "variante": [
+            "Kindle",
+            "Tableta",
+            "Smartphone",
+            "Laptop"
+        ],
+        "corect": 0
+    },
+    {
+        "intrebare": "Cât de des citiți cărți electronice?",
+        "variante": [
+            "Zilnic",
+            "De câteva ori pe săptămână",
+            "De câteva ori pe lună",
+            "Rareori"
+        ],
+        "corect": 2
+    }
+]

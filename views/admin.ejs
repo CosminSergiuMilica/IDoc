@@ -1,0 +1,35 @@
+<%if(isAdmin && isAdmin == 1){%>
+<br><br><br>
+    <h1>Adauga produse noi</h1>
+        <hr><br>
+<div class = "admin">
+    <form  class="auth" action="/admin/adauga-produs" method="POST" enctype="multipart/form-data">
+    <label for="nume">Nume produs:</label><br>
+    <input type="text" id="nume" name="nume" required><br>
+    <label for="pret">Preț produs:</label><br>
+    <input type="number" id="pret" name="pret" step="0.01" required><br>
+    <label for="imagine">Imagine produs:</label><br>
+    <input type="file" name="imagine" /><br>
+    <button class="bd" type="submit" >Adaugă produs</button>
+  </form>
+  <div>
+                <form action='/creare-bd' method="POST">
+                    <button class="bd" type="submit">Creare BD</button>
+                </form>
+            </div>
+            <br>
+            <div>
+                <form action='/inserare-bd' method="POST">
+                    <button class="bd" type="submit">Incarcare BD</button>
+                </form>
+            </div>
+</div>
+
+<%}else{%>
+    <div class="error-message-container">
+  <span class="error-message">Acces restrictionat!</span>
+</div>
+   
+    <%}%>
+
+  

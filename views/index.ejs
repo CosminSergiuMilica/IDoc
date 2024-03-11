@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IDoc.ro</title>
+    <script src="script.js"></script>
+    <link href="./stil.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <br>
+    <h1>IDoc</h1>
+    <hr><br>
+    <div>
+        <% if (userName !==undefined) { %>
+            <h2>Bine ai venit, <%= userName %>!</h2>
+            <% } %>
+    </div>
+    
+    <% if(userName==undefined) { %>
+
+        <h2>Va rugam sa va autentificati:</h2><br>
+        <form class="bAuth" action="/autentificare" method="GET">
+            <button class="btnAuth" type="submit">Autentificare</button>
+        </form>
+
+
+
+        <%}%>
+
+            <br>
+
+            <div class="products-grid">
+                <% produse.forEach(function(produs) { %>
+                    <div class="product">
+                        <div>
+                            <h2>
+                                <%= produs.nume %>
+                            </h2>
+                            <p>Pret: <%= produs.pret %>
+                            </p>
+                        </div>
+                        <img src="<%=produs.imagine%>" alt="<%= produs.nume %>" width="100px" height="100px"><br>
+                        <% if(userName ){%>
+                            <form action="/adaugare_cos" method="POST">
+                                <input type="hidden" name="id" value="<%= produs.id %>">
+                                <button type="submit">Adauga in cos</button>
+                            </form>
+                            <%}%>
+
+                    </div>
+
+                    <% }) %>
+            </div>
+
+
+
+</body>
+
+</html>
